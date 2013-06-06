@@ -1,0 +1,66 @@
+﻿@model IEnumerable<MVC.Models.Product>
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Show</title>
+</head>
+<body>
+    <div>
+
+
+
+        <table>
+            <tr>
+
+                <th>Product Id
+
+                </th>
+
+                <th>Name
+
+                </th>
+
+                <th>Product Number
+
+                </th>
+
+            </tr>
+
+            <@foreach (var item in Model)
+            
+            
+             {
+
+   
+
+        <tr>
+
+            
+            
+             <th>@Html.DisplayName(item.ProductID.ToString())</th>
+            <th>@Html.DisplayName(item.Name.ToString())</th>
+            <th>@Html.DisplayName(item.ProductNumber.ToString())</th>
+           
+
+            
+
+            
+
+        </tr>
+
+
+
+            } 
+
+        </table>
+
+    </div>
+</body>
+</html>
